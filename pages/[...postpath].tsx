@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://heateradvisoraplenty.com/g1u0u6t3?key=974d400d266577ea1ae0d8fd9da9679/`
+					`https://heateradvisoraplenty.com/te55qhcq5?key=ababdc1ee69b2b87c67de3439161ad97/`
 				}`,
 			},
 		};
