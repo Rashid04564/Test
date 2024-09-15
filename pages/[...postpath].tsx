@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https://dev-rashid-test.pantheonsite.io/graphql"
+	const endpoint = "https://dev-rashid-blog.pantheonsite.io/graphql"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://www.cpmrevenuegate.com/axexvgzr?key=84023a9580e274f0e22f9e9569b0646f/` 
+					`https://rashid7788322.blogspot.com/` + encodeURI(path as string)
 				}`,
 			},
 		};
