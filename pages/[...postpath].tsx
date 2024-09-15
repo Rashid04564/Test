@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://rashid7788322.blogspot.com/` + encodeURI(path as string)
+					`https://rashid7788322.blogspot.com/`
 				}`,
 			},
 		};
